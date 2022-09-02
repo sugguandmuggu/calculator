@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./function.js" defer></script>
+    <link href="./style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="text">Please donot divide by 0 for your own sake.</div>
+    <div class="text2">You only get 3 strikers for doing so.</div>
+    <div class="calculator">
+        <div class="screens">
+            <div class="lastScreen">4+3=  </div>
+            <div class="currentScreen">7  </div>
+        </div>
+        <div class="clearBackspace">
+            <button class="clearBtn" onclick="this.blur();">AC</button>
+            <button class="backspaceBtn" onclick="this.blur();">⌫</button>
+        </div>
+
+        <div class="btnGrid">
+          <button class="numBtn" onclick="this.blur();" data-number>7</button>
+          <button class="numBtn" onclick="this.blur();" data-number>8</button>
+          <button class="numBtn" onclick="this.blur();" data-number>9</button>
+          <button class="btn" onclick="this.blur();" data-operator>÷</button>
+
+          <button class="numBtn" onclick="this.blur();" data-number>4</button>
+          <button class="numBtn" onclick="this.blur();" data-number>5</button>
+          <button class="numBtn" onclick="this.blur();" data-number>6</button>
+          <button class="btn" onclick="this.blur();" data-operator>x</button>
+
+          <button class="numBtn" onclick="this.blur();" data-number>1</button>
+          <button class="numBtn" onclick="this.blur();" data-number>2</button>
+          <button class="numBtn" onclick="this.blur();" data-number>3</button>
+          <button class="btn" onclick="this.blur();" data-operator>-</button>
+
+          <button class="numBtn" onclick="this.blur();" id="pointBtn">.</button>
+          <button class="numBtn" onclick="this.blur();" data-number>0</button>
+          <button class="btn" onclick="this.blur();" id="equalsBtn">=</button>
+          <button class="btn" onclick="this.blur();" data-operator>+</button>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>
+          Copyright ©
+          <script>
+            document.write(new Date().getFullYear())
+          </script>
+          sugguandmuggu
+        </p>
+      </footer>
+    
+</body>
+</html>

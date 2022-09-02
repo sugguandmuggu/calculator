@@ -1,0 +1,133 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.text{
+    font-size: 40px;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: 10px;
+}
+
+.text2{
+    font-size: 40px;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-bottom: 10px;
+}
+
+.calculator{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding:10px;
+    max-width: 360px;
+    height: 100%;
+    max-height: 581px;
+}
+
+.screens{
+    height: 150px;
+    width:100%;
+}
+
+.lastScreen{
+    height: 60px;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: orange;
+    padding: 0;
+    padding-right: 10px;
+    margin: 0;
+    color: black;
+    font-size: 25px;
+    text-align: end;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+}
+
+.currentScreen{
+    box-sizing: border-box;
+    height: 90px;
+    width: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: orange;
+    padding: 0;
+    padding-right: 10px;
+    margin: 0;
+    color: black;
+    font-size: 40px;
+    text-align: end;
+    overflow-wrap: break-word;
+}
+
+
+.clearBackspace{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.clearBtn{
+    text-align: center;
+    width: 50%;
+    font-size: 40px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.backspaceBtn{
+    text-align: center;
+    width: 50%;
+    font-size: 40px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.btnGrid{
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+
+.btn, .numBtn{
+    height: 88px;
+    width: 88px;
+    font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.btn{
+    font-size: 25px;
+}
+
+button{
+    border: none;
+    cursor:pointer;
+    background-color: black;
+    color: white;
+}
+
+.footer{
+    background-color: gray;
+    max-height: 200px;
+    width: 100%;
+    align-self: flex-end;
+    text-align: center;
+    margin-top: auto;
+    font-family: 'Josefin Sans', sans-serif;
+    
+}
