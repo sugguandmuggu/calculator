@@ -11,6 +11,7 @@ let operatorFlag=0;
 let result = 0;
 let resultFlag=0;
 let strike=0;
+let strikeFlag=0;
 
 
 numBtns.forEach((numBtn) => numBtn.addEventListener('click', () => {
@@ -37,12 +38,22 @@ btns.forEach((btn) => btn.addEventListener("click", () => {
         console.log(num1);
         console.log(num2);
         result=operate(operator, +num1, +num2);
-        lastScreen.textContent=`${currentScreen.textContent}${btn.textContent}`;
-        currentScreen.textContent=`${result}`;
-        num1=`${result}`;
-        num2="";
-        operatorFlag=2;
-        resultFlag=1;
+        if(strikeFlag != 1){
+            lastScreen.textContent=`${currentScreen.textContent}${btn.textContent}`;
+            currentScreen.textContent=`${result}`;
+            num1=`${result}`;
+            num2="";
+            operatorFlag=2;
+            resultFlag=1;
+        }
+        else{
+            num1="";
+            num2="";
+            resultFlag=0;
+            operatorFlag=0;
+        }
+        strikeFlag=0;
+        
     }
     else if(operatorFlag==1){
         currentScreen.textContent=`${currentScreen.textContent}${btn.textContent}`;
@@ -93,6 +104,14 @@ const division = function(a,b){
         strike++;
         if(strike === 3){
             alert("You really thought something would happen on the third try huh?");
+            strike=0;
+            strikeFlag=1;
+        }
+
+        else{
+            currentScreen.textContent=`Strike ${strike}`;
+            lastScreen.textContent="";
+            strikeFlag=1;
         }
     }
 }
