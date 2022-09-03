@@ -37,13 +37,17 @@ numBtns.forEach((numBtn) => numBtn.addEventListener('click', () => {
 }));
 
 btns.forEach((btn) => btn.addEventListener("click", () => {
-    if(btn.id=="equalsBtn" && num1 !== "" && num2 !== "")
+    if(btn.id=="equalsBtn" && num1 !== "" )
     {
-        //console.log("hello");
-        console.log(num1);
-        console.log(num2);
         result=operate(operator, +num1, +num2);
-        if(strikeFlag != 1){
+        if(num2===""){
+
+        }
+        //console.log("hello");
+        //console.log(num1);
+        //console.log(num2);
+        
+        else if(strikeFlag != 1){
             lastScreen.textContent=`${currentScreen.textContent}${btn.textContent}`;
             currentScreen.textContent=`${result}`;
             num1=`${result}`;
