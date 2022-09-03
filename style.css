@@ -8,6 +8,10 @@ body{
     height: 100vh;
 }
 
+i{
+    color: black;
+}
+
 .text{
     font-size: 40px;
     font-family: 'Josefin Sans', sans-serif;
